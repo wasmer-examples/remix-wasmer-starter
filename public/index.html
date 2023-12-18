@@ -1,0 +1,23 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>New Remix App</title><meta name="description" content="Welcome to Remix!"/></head><body><div style="font-family:system-ui, sans-serif;line-height:1.8"><h1>Welcome to Remix</h1><ul><li><a target="_blank" href="https://remix.run/tutorials/blog" rel="noreferrer">15m Quickstart Blog Tutorial</a></li><li><a target="_blank" href="https://remix.run/tutorials/jokes" rel="noreferrer">Deep Dive Jokes App Tutorial</a></li><li><a target="_blank" href="https://remix.run/docs" rel="noreferrer">Remix Docs</a></li></ul></div><script>((STORAGE_KEY, restoreKey) => {
+    if (!window.history.state || !window.history.state.key) {
+      let key = Math.random().toString(32).slice(2);
+      window.history.replaceState({
+        key
+      }, "");
+    }
+    try {
+      let positions = JSON.parse(sessionStorage.getItem(STORAGE_KEY) || "{}");
+      let storedY = positions[restoreKey || window.history.state.key];
+      if (typeof storedY === "number") {
+        window.scrollTo(0, storedY);
+      }
+    } catch (error) {
+      console.error(error);
+      sessionStorage.removeItem(STORAGE_KEY);
+    }
+  })("positions", null)</script><link rel="modulepreload" href="/build/entry.client-HSLWR5A6.js"/><link rel="modulepreload" href="/build/_shared/chunk-RFX4SXBN.js"/><link rel="modulepreload" href="/build/_shared/chunk-6OZYWZFQ.js"/><link rel="modulepreload" href="/build/root-FK6JYS2U.js"/><link rel="modulepreload" href="/build/routes/_index-YIX5HX33.js"/><script>window.__remixContext = {"url":"/","state":{"loaderData":{"root":null,"routes/_index":null},"actionData":null,"errors":null},"future":{"v3_fetcherPersist":false}};</script><script type="module" async="">import "/build/manifest-AB787DDD.js";
+import * as route0 from "/build/root-FK6JYS2U.js";
+import * as route1 from "/build/routes/_index-YIX5HX33.js";
+window.__remixRouteModules = {"root":route0,"routes/_index":route1};
+
+import("/build/entry.client-HSLWR5A6.js");</script></body></html>
