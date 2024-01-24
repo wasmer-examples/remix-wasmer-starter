@@ -1,38 +1,28 @@
-# Welcome to Remix!
+This is a [Remix](https://remix.run/) project bootstrapped with `create-remix-app`.
 
-- [Remix Docs](https://remix.run/docs)
+## Getting Started
 
-## Development
+First, run the development server:
 
-From your terminal:
-
-```sh
+```bash
 npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-This starts your app in development mode, rebuilding assets on file changes.
 
-## Deployment
+## Deploy on Wasmer Edge
 
-First, build your app for production:
+The easiest way to deploy your Remix.run app is to use the [Wasmer Edge](https://wasmer.io/products/edge).
 
-```sh
-npm run build
+Live example: http://UPDATE_URL.wasmer.app/
+
+First, you'll need to run `npm run build`, and then, to deploy to Wasmer Edge:
+
+```bash
+wasmer deploy
 ```
-
-Then run the app in production mode:
-
-```sh
-npm start
-```
-
-Now you'll need to pick a host to deploy it to.
-
-### DIY
-
-If you're familiar with deploying node applications, the built-in Remix app server is production-ready.
-
-Make sure to deploy the output of `remix build`
-
-- `build/`
-- `public/build/`
