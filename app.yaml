@@ -1,0 +1,4 @@
+---
+kind: wasmer.io/App.v0
+name: remix-wasmer-starter
+package: wasmer-examples/remix-wasmer-starter@0.1.1

@@ -1,0 +1,12 @@
+[package]
+name = "wasmer-examples/remix-wasmer-starter"
+version = "0.1.1"
+description = "Wasmer Remix starter package"
+readme = "README.md"
+repository = "https://github.com/wasmer-examples/remix-wasmer-starter"
+
+[dependencies]
+"wasmer/static-web-server" = "*"
+
+[fs]
+public = "public"
