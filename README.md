@@ -17,11 +17,9 @@ bun dev
 You can also run the Remix starter easily using Wasmer (check out the [install guide](https://docs.wasmer.io/install)):
 
 ```bash
-wasmer run wasmer-examples/remix-wasmer-starter --net -- --port 3000
+npm run build
+wasmer run . --net -- --port 3000
 ```
-
-> [!TIP]
-> You can also run `wasmer run . --net -- --port 3000` in the root of this repo, after running `npm run build`
 
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
