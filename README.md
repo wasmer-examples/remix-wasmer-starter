@@ -18,7 +18,7 @@ You can also run the Remix starter easily using Wasmer (check out the [install g
 
 ```bash
 npm run build
-wasmer run . --net -- --port 3000
+wasmer run . -- --port 3000
 ```
 
 
