@@ -1,5 +1,0 @@
-[dependencies]
-"wasmer/static-web-server" = "*"
-
-[fs]
-public = "public"
